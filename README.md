@@ -4,7 +4,7 @@
 This is a replication of a figma design of a landing page for coffee shop. However this is not complete now. It's work in progress.
 
 ## Tools used
-- React
+- Reactjs
 - Framer motion (For Animation)
 
 ## Links
