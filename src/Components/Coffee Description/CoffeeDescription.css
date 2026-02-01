@@ -1,0 +1,27 @@
+.coffee-description-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.section-heading{
+    color: var(--heading-color);
+    font-size: clamp(1.5rem,calc(0.8rem + 5vw),2.5rem);
+}
+
+.coffee-description-text{
+    display: grid;
+    gap: 1rem;
+    color: var(--text-color-dark);
+}
+
+.coffee-description-text > .cta-btn{
+    justify-self: start;
+}
+.coffee-description-section img{
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,32 @@
+.coffee-flavors{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.section{
+    text-align: center;
+    position: relative;
+    margin-block:5rem;
+}
+
+.coffee-tagline{
+    font-size: clamp(1.2rem,calc(0.5rem + 5vw),3rem);
+}
+
+.section-text{
+    margin-block: 1rem;
+    font-size: clamp(0.8rem,calc(0.5rem + 1.4vw),1.1rem);
+}
+
+.coffee-blast-img{
+    position: absolute;
+    width: clamp(10rem, calc(12rem + 10vw), 55rem);
+    max-width: 100%;
+    height:auto;
+    top: clamp(-12em,calc(-12em - 12vw),-20rem);
+    object-fit: cover;
+    left: 0;
+    /* border:2px solid var(--accent-color); */
+}

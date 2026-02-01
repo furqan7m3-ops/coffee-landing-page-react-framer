@@ -1,0 +1,99 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nav, .nav-cta-btns > button{
+    font-family: var(--font-primary);
+    color: white;
+}
+
+.nav-logo{
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-cta-btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-btn{
+    border:0;
+    padding:0.5rem 1rem;
+    border-radius:50px;
+}
+
+.nav-cta-btns > button:first-child{
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav-cta-btns > button:last-child{
+    background-color: var(--accent-color);
+    color: var(--text-color-btn);
+}
+
+.nav-icon{
+    display: none;
+}
+
+.nav-icon.active{
+    display: none;
+}
+
+
+.nav-list-item >a{
+    text-decoration: none;
+    color: var(--text-color-light);
+    transition: all 200ms ease-in-out;
+    /* border:1px solid white; */
+    display: inline-block;
+}
+
+.nav-list-item > a:hover{
+    transform:scale(1.1);
+}
+
+@media (max-width: 750px) {
+    .nav-list, .nav-cta-btns{
+        display: none;
+    }
+    .nav-icon{
+        display: block;
+    }
+
+    .nav-list.active .nav{
+        position: relative;
+    }
+
+    .nav-list.active{
+        display: grid;
+        gap: 2rem;
+        position: absolute;
+        top:100%;
+        right:2%;
+        z-index: 1;
+        width: 95vw;
+        margin-inline: auto;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        color: var(--text-color-light);
+        border: 1px solid var(--accent-color);
+    }
+}
+

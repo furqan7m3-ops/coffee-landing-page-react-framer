@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+:root {
+  --font-primary: 'Playfair Display', serif;
+  --font-secondary: 'Clicker Script', cursive;
+  --accent-color: #F9C06A;
+  --heading-color: #603809;
+  --text-color-light: #FFFFFF;
+  --text-color-btn: #1E1E1E;
+  --text-color-dark:#707070;
+  --card-color:#FFF9F1;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.cta-btn {
+  background-color: var(--accent-color);
+  color: var(--text-color-btn);
+  font-family: var(--font-primary);
+  font-weight: 500;
+  padding: 0.8em 1em;
+  border-radius: 50px;
+}
+
+.layout {
+  position: relative;
+}
+
+
+@media (max-width:750px) {
+  :root {
+    font-size: 12px;
+  }
+}
