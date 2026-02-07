@@ -16,8 +16,8 @@
   --heading-color: #603809;
   --text-color-light: #FFFFFF;
   --text-color-btn: #1E1E1E;
-  --text-color-dark:#707070;
-  --card-color:#FFF9F1;
+  --text-color-dark: #707070;
+  --card-color: #FFF9F1;
 }
 
 body {
@@ -37,6 +37,43 @@ body {
   position: relative;
 }
 
+
+
+.card {
+  background-color: var(--card-color);
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  color: var(--heading-color);
+}
+
+.card-text {
+  color: var(--text-color-dark);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+    gap: 1rem;
+}
+
+
+.section{
+    text-align: center;
+    position: relative;
+    margin-block:5rem;
+}
+
+.section-text{
+    margin-block: 1rem;
+    font-size: clamp(0.8rem,calc(0.5rem + 1.4vw),1.1rem);
+}
 
 @media (max-width:750px) {
   :root {

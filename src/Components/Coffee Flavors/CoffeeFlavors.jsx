@@ -8,9 +8,9 @@ export default function CoffeeFlavors() {
             <img className="coffee-blast-img" src={CoffeeBlastImg} alt="coffee-blast-image" />
             <h2 className="section-heading coffee-tagline">Enjoy a new blend of coffee style</h2>
             <p className="section-text">Explore all flavours of coffee with us. There is always a new cup worth experiencing</p>
-            <div className="coffee-flavors">
+            <div className="cards">
                 {
-                    CoffeeFlavorsData.map((flavor) => <CoffeeFlavor {...flavor} />)
+                    CoffeeFlavorsData.map((flavor) => <CoffeeFlavor key={flavor.id} {...flavor} />)
                 }
             </div>
         </article>

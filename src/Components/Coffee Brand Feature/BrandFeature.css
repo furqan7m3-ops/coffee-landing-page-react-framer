@@ -1,0 +1,7 @@
+.feature{
+    padding:1.5rem;
+}
+
+.feature > img{
+    justify-self: center;
+}
