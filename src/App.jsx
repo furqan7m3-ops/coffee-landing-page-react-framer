@@ -3,6 +3,7 @@ import HeroSection from "./Components/HeroSection/HeroSection";
 import CoffeeDescription from "./Components/Coffee Description/CoffeeDescription";
 import CoffeeFlavors from "./Components/Coffee Flavors/CoffeeFlavors";
 import BrandFeatures from "./Components/Coffee Brand Features/BrandFeatures";
+import AnimationProvider from "./Context/AnimationProvider";
 export default function App() {
   return (
     <>
@@ -11,8 +12,12 @@ export default function App() {
         <HeroSection />
       </div>
       <CoffeeDescription />
-      <CoffeeFlavors />
-      <BrandFeatures />
+
+      <AnimationProvider>
+        <CoffeeFlavors />
+        <BrandFeatures />
+      </AnimationProvider>
+
     </>
   );
 }

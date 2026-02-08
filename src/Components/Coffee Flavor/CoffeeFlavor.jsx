@@ -1,7 +1,10 @@
 import "./CoffeeFlavor.css";
+import { useAnimationContext } from "../../Context/AnimationContext";
+import {motion} from "framer-motion";
 export default function CoffeeFlavor({ flavorName, price, ratio, img }) {
+    const {childVariants} = useAnimationContext();
     return (
-        <article className="coffee-flavor">
+        <motion.article className="coffee-flavor" variants={childVariants}>
             <img src={img?.src} alt={img?.alt} />
             <div className="flavor-text">
                 <h3 className="flavor-name">{flavorName}</h3>
@@ -9,6 +12,6 @@ export default function CoffeeFlavor({ flavorName, price, ratio, img }) {
                 <p className="flavor-price">$ {price}</p>
                 <button className="cta-btn">Order Now</button>
             </div>
-        </article>
+        </motion.article>
     );
 }
